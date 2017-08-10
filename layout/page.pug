@@ -1,0 +1,9 @@
+extends includes/layout.pug
+
+block content
+  h1 fuck the workd
+  article#page
+    h1= page.title
+    != page.content
+  include includes/pagination.pug
+

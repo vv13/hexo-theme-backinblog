@@ -1,0 +1,23 @@
+
+div#pagination
+
+  //- previous page link, some pages may have a different url
+  if page.prev_link
+    a(class='prev', href=url_for(page.prev_link))
+      i(class="fa fa-chevron-left", aria-hidden="true")
+
+  else if page.prev === 1
+    a(class='prev', href=url_for('/'))
+      i(class="fa fa-chevron-left", aria-hidden="true")
+
+  //- next page link, again the logic is different on different pages
+  if page.next_link
+    a(class='next', href=url_for(page.next_link))
+      i(class="fa fa-chevron-right", aria-hidden="true")
+
+  else if page.next && page.next.path
+    a(class='next', href=url_for(page.next.path))
+      i(class="fa fa-chevron-right", aria-hidden="true")
+
+
+

@@ -1,0 +1,12 @@
+extends includes/layout
+include mixins/title-info
+block content
+    != css('/css/github-markdown.css')
+    article#post.markdown-body
+        h1.article-title= page.title
+        +titleInfo(page)
+        != page.content
+
+    include includes/sidemenu.pug
+    if config.disqus_shortname
+        include includes/disqus

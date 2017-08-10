@@ -1,0 +1,16 @@
+div#disqus_thread
+script.
+    (function() {
+        var dsq = document.createElement('script');
+        var head = document.getElementsByTagName('head')[0];
+        var body = document.getElementsByTagName('body')[0];
+
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + '#{config.disqus_shortname}' + '.disqus.com/embed.js';
+
+
+        (head || body).appendChild(dsq);
+    }());
+noscript
+    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>

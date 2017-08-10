@@ -1,0 +1,22 @@
+
+language: en
+
+menu:
+  主页: /
+  归档: /about
+  联系: /contact
+
+stylesheets:
+- /css/vv13
+- /css/font-awesome/css/font-awesome.min.css
+
+scripts:
+- /js/vv13.js
+
+less:
+  compress: true
+  paths:
+    - source/css/vv13.less
+
+github: https://github.com/vv13
+rss: /atom.xml

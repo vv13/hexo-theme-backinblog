@@ -1,0 +1,14 @@
+mixin titleInfo(post)
+    - var categories = post.categories.map(function(e) {return {path: e.path, name: e.name}})
+    - var tags = post.tags.map(function(e) {return {path: e.path, name: e.name}})
+    .title-info
+        if post.date
+            time(class='post-time', datetime=post.date.toJSON())= date(post.date, 'M.D, YYYY')
+        .title-item
+            each category in categories
+                a(href='/' + category.path)
+                    i(class="fa fa-folder-open")= category.name 
+            each tag in tags
+                a(href='/' + tag.path)
+                    i(class="fa fa-tag")= tag.name
+

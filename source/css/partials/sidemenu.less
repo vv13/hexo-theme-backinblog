@@ -1,0 +1,25 @@
+.side-menu {
+  position: fixed;
+  right: 2%;
+  bottom: 20%;
+  z-index: 99;
+  .shortcut {
+    background-color: rgba(138, 157, 170, .3);
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    font-size: 3rem;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.39);
+  }
+}
+
+@media(max-width: 700px) {
+    .side-menu {
+        display: none;
+    }
+}
