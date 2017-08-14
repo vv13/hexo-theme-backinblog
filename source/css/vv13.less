@@ -41,6 +41,9 @@ a {
   }
   .post-excerpt {
     color: @hint;
+    ul {
+      overflow: auto;
+    }
   }
   img {
     max-width: 100%;
@@ -122,4 +125,16 @@ pre .line {
   content: "\f02b";
   position: relative;
   left: -2px;
+}
+
+// 全局
+figure {
+  margin: 0;
+  overflow: auto;
+  table {
+    min-width: 100%;
+  }
+  .code {
+    width: 100%;
+  }
 }

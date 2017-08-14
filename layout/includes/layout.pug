@@ -22,9 +22,10 @@ html(lang=config.language)
         div!= body
       else
         block content
-      include footer.pug
+        include footer.pug
+        include sidemenu.pug
     if theme.scripts !== undefined && theme.scripts.length > 0
       //- scripts list from config.yml
       each url in theme.scripts
         script(src=url)
-        
+
