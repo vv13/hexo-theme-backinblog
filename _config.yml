@@ -1,11 +1,6 @@
 
 language: en
 
-menu:
-  主页: /
-  归档: /about
-  联系: /contact
-
 stylesheets:
 - /css/vv13
 - /css/font-awesome/css/font-awesome.min.css

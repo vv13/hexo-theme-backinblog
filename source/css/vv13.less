@@ -52,7 +52,9 @@ a {
   }
   figure table {
     padding: 0 15px;
-    background: #272727;
+    background: #014243;
+    color: #ACBDC5;
+    border-radius: 5px;
   }
 }
 
@@ -98,7 +100,11 @@ a {
     font-size: 1.5rem;
     .item-time {
       color: @hint;
-      margin-right: 10px;
+      display: inline-block;
+      min-width: 100px;
+      margin-right: 20px;
+      text-align: right;
+      font-family: serif;
     }
   }
 }
@@ -109,6 +115,14 @@ a {
   max-width: 980px;
   margin: 0 auto;
   padding-top: 45px;
+  pre, table {
+    background-color: #014243 !important;
+    color: #ACBDC5;
+    border-radius: 5px;
+  }
+  a {
+    color: rgba(98, 155, 220, 0.84) !important;
+   }
 }
 
 @media (max-width: 767px) {
