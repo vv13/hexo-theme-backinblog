@@ -22,7 +22,7 @@
     };
 
     goTop.onclick = function() {
-      scrollTo(document.body, 0, 100);
+      scrollTo(document.documentElement, 0, 100);
     };
   };
 
@@ -36,4 +36,5 @@
       scrollTo(element, to, duration - 2);
     }, 10);
   }
+
 })();

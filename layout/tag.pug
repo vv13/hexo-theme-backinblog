@@ -3,12 +3,12 @@ extends includes/layout.pug
 block content
   div#tag
     h1
-       i(class="fa fa-tag")
+       i(class="iconfont icon-tag")
        != page.tag
     - page.posts.each(function(article){
       .article-list-item
-        time(class='item-time', datetime=date_xml(article.date))= date(article.date, 'M.D, YYYY')
-        a(href=url_for(article.path))= article.title || 'No Title'
+        span(class='item-time', datetime=date_xml(article.date))= date(article.date, 'M.D, YYYY')
+        a(class='post-title', href=url_for(article.path))= article.title || 'No Title'
     - })
 
   include includes/pagination.pug

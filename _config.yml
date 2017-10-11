@@ -3,7 +3,7 @@ language: en
 
 stylesheets:
 - /css/vv13
-- /css/font-awesome/css/font-awesome.min.css
+- //at.alicdn.com/t/font_438575_w9o3rescwyp919k9.css
 
 scripts:
 - /js/vv13.js

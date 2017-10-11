@@ -33,7 +33,10 @@ a {
     color: @title;
     text-decoration: none;
     cursor: pointer;
-    border-bottom: 1px solid @title;
+    &:hover {
+      color: @hover;
+      border-bottom: 1px solid @title;
+    }
   }
   .post-time {
     font-size: 1.3rem;
@@ -73,10 +76,14 @@ a {
     float: right;
     font-size: 3rem;
     a {
+      text-decoration: none;
       margin-left: 15px;
       img {
         width: 20px;
         height: 20px;
+      }
+      i {
+        font-size: 30px;
       }
     }
   }
@@ -87,16 +94,17 @@ a {
   }
 }
 
-#tag,
-#category {
+#tag {
   h1 {
     font-size: 3rem;
     color: @title;
-    .fa {
+    .iconfont {
+      font-size: 30px;
       margin-right: 5px;
     }
   }
   .article-list-item {
+    line-height: 30px;
     font-size: 1.5rem;
     .item-time {
       color: @hint;
@@ -105,6 +113,12 @@ a {
       margin-right: 20px;
       text-align: right;
       font-family: serif;
+    }
+    .post-title {
+      text-decoration: none;
+      &:hover {
+        color: @hover;
+      }
     }
   }
 }
