@@ -36,5 +36,4 @@
       scrollTo(element, to, duration - 2);
     }, 10);
   }
-
 })();

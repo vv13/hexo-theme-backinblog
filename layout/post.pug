@@ -6,6 +6,4 @@ block content
         h1.article-title= page.title
         +titleInfo(page)
         != page.content
-
-    if config.disqus_shortname
-        include includes/disqus
+    #commenter
