@@ -1,0 +1,136 @@
+html,
+body
+    padding 0
+    margin 0
+
+html
+    font-size 62.5%
+    background $bg
+
+a
+    color $highlight
+
+#content-outer
+    width 80%
+    max-width 1000px
+    margin auto
+
+.recent-post-item
+    margin 40px auto 0
+    padding-bottom 40px
+    font-size 1.4rem
+    a
+        color $highlight
+    .post-title
+        font-size 3.6rem
+        color $title
+        text-decoration none
+        cursor pointer
+        &:hover
+            color $hover
+            border-bottom 1px solid $title
+    .post-time
+        font-size 1.3rem
+        color $highlight
+    .post-excerpt
+        color $hint
+        ul
+            overflow auto
+    img
+        max-width 100%
+        box-sizing content-box
+        background-color #fff
+    figure
+        table
+            padding 0 15px
+            background #014243
+            color #949ca0
+            border-radius 5px
+
+#footer
+    width 100%
+    padding 30px 0
+    height 50px
+    line-height 50px
+    font-size 1.4rem
+    color $hint
+    display flex
+    align-content center
+    justify-content space-between
+    .shortcut
+        float right
+        font-size 3rem
+        a
+            text-decoration none
+            margin-left 15px
+            img
+                width 20px
+                height 20px
+            i
+                font-size 30px
+    .ama
+        padding-left 20px
+
+@media (max-width: 700px)
+    #footer
+        .shortcut
+            display none
+
+#tag
+    h1
+        font-size 3rem
+        color $title
+        .iconfont
+            font-size 30px
+            margin-right 5px
+    .article-list-item
+        line-height 30px
+        font-size 1.5rem
+        .item-time
+            color $hint
+            display inline-block
+            min-width 100px
+            margin-right 20px
+            text-align right
+            font-family serif
+        .post-title
+            text-decoration none
+            &:hover
+                color $hover
+
+.markdown-body
+    box-sizing border-box
+    min-width 200px
+    max-width 980px
+    margin 0 auto
+    padding-top 45px
+    a
+        color rgba(98, 155, 220, 0.84) !important
+
+.markdown-body pre,
+.markdown-body table
+    background-color #014243 !important
+    color #949ca0
+    border-radius 5px
+
+@media (max-width: 767px)
+    .markdown-body
+        padding-top 15px
+
+pre
+    .line
+        min-height 1.4em
+
+.fa-tag
+    &:before
+        content "\f02b"
+        position relative
+        left -2px
+
+figure
+    margin 0
+    overflow auto
+    table
+        min-width 100%
+    .code
+        width 100%

@@ -1,7 +1,7 @@
 extends includes/layout
 include mixins/title-info
 block content
-    != css('/css/github-markdown.css')
+    != css('/static/github-markdown.css')
     article#post.markdown-body
         h1.article-title= page.title
         +titleInfo(page)

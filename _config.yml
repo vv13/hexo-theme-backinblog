@@ -2,16 +2,14 @@
 language: en
 
 stylesheets:
-- /css/vv13
+- /style/index.css
 - //at.alicdn.com/t/font_438575_w9o3rescwyp919k9.css
 
 scripts:
 - /js/vv13.js
 
-less:
+stylus:
   compress: true
-  paths:
-    - source/css/vv13.less
 
 github: https://github.com/vv13
 rss: /atom.xml
