@@ -1,6 +1,7 @@
 div#footer
-    div vv13 &copy; 2017
-        a(href=theme.ama_url, class="ama", target="_blank") Ask Me Anything
+    div #{config.author} &copy; 2017
+        if theme.ama_url
+            a(href=theme.ama_url, class="ama", target="_blank") Ask Me Anything
     .shortcut
         if theme.rss
             a(href=theme.rss)

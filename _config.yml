@@ -11,6 +11,6 @@ scripts:
 stylus:
   compress: true
 
-github: https://github.com/vv13
 rss: /atom.xml
+github: https://github.com/vv13
 ama_url: https://github.com/vv13/ama
